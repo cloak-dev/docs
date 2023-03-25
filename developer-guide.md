@@ -53,8 +53,9 @@ To add support for a new chat application, you need to do the following:
 1. Create a new file in the `usecases` directory, and name it after the chat application. For example, if you are adding support for Discord, you would name the file `discord.ts`.
 2. Write a hook that hooks into the chat application's "send" button, and encrypts the message before it is sent using the `E2EE` class. You can use the `usecases/basic.ts` file as a reference.
 3. Write a hook that hooks into the chat application's websocket connection, and decrypts the message before it is displayed using the `E2EE` class. You can use the `usecases/basic.ts` file as a reference.
-4. Test your code, using the test chat server provided.
-5. Open a pull request.
+4. You may add hooks for images, files and any other type of message as well.
+5. Test your code, using the test chat server provided.
+6. Open a pull request.
 
 
 ## Note
