@@ -14,15 +14,15 @@ The problem isn't exactly the state reading your messages. The fact that there i
 
 ## What is the solution?
 
-The solution is simply to use your _own_ layer of end-to-end encryption. Essentially, you don't trust that the messaging app actually encrypts your message, and you encrypt it first _before_ even giving the message to the app. This means that the app can't read your messages, and so if it is ever passing the un-encrypted message to the server, it will still be encrypted with the first process.
+The solution is simply to use your _own_ layer of end-to-end encryption. Essentially, you don't trust that the messaging app actually encrypts your message, and you encrypt it first _before_ even giving the message to the app. This means that the app can't read your messages, and so if it is ever passing the un-encrypted message to the server, it will remain encrypted due to the first process.
 
 ## Encryption and decryption is way too complicated, how does this scale to a solution that the average person can use?
 
-This is where Cloak comes in. Cloak is a plugin for any web-based messaging app that automatically encrypts your messages before sending them to the server. This means that you can use any messaging app that you want, and still have the security of end-to-end encryption. This is a huge step forward in the security of messaging apps, as it means that you can use any messaging app that you want, and still have the security of end-to-end encryption.
+This is where Cloak comes in. Cloak is a plugin for any web-based messaging app that automatically encrypts your messages before the app even processes it, exfiltrating end-to-end encryption from the messaging app, and putting it in the hands of the user. This means that you can use any messaging app that you want, and still have the security of end-to-end encryption. More than everything, Cloak aims to be a proof of concept that end-to-end encryption can be plugged in to any system by the average end-user, and we hope that this space only grows from here.
 
 ## Well, this just seems like kicking the can down the road. What if Cloak itself has a backdoor?
 
-This is a valid concern, and one that we take very seriously. To that end, all of our code is open-source, and it runs entirely in your web browser. There is no "cloak server" to which your messages can be sneakily passed to!
+This is a valid concern, and one that we take very seriously. To that end, all of our code is [open-source](https://github.com/cloak-dev), and it runs entirely in your web browser. There is no "cloak server" to which your messages can be sneakily passed to, and this can be verified by anyone who wants to by examining our code.
 
 ## So, is it actually a silver bullet?
 

@@ -28,16 +28,20 @@ Want to add support for another chat application? [Read the developer guide](dev
 To install Cloak, run the following command in your terminal:
 
 1. Linux and MacOS
+
 ```bash
 curl -s "https://tinyurl.com/get-cloak/unix" | bash
 ```
 
 2. Windows
+
 ```powershell
 iwr -usebp "https://tinyurl.com/get-cloak/win" | iex
 ```
 
-It will add bookmarklets to your browsers that will allow you to encrypt your messages on the supported chat applications.
+It will add bookmarklets to your supported<sup>1</sup> browsers that will allow you to encrypt your messages on the supported chat applications.
+
+<sup>1</sup> Browsers utilising the latest Chromium engine, as well as Firefox are supported.
 
 ## Getting Started
 
@@ -49,7 +53,7 @@ For more detailed instructions, see the [manual](manual.md).
 
 ## Developers
 
-If you want to learn more about how cloak is built, or want to add support for another chat application, see the [developer guide](developer-guide.md).
+If you want to learn more about how cloak is built, contribute to it by e.g adding support for another chat application, see the [developer guide](developer-guide.md).
 
 ## FAQ
 
@@ -82,12 +86,20 @@ Cloak uses the battle-tested WebCrypto API, which is used by many other secure a
 <summary> How does Cloak compare to other end-to-end encryption solutions? </summary>
 
 As far as we are aware, there is no product that matches up to Cloak in terms of ease of use, feature-set, security, and openness.
+
 </details>
 
 <details>
 <summary> Why isn't cloak available on the mobile platform? </summary>
 
 Cloak requires hooking into various functionalities of the chat application, which is not possible on mobile where each application runs in it's own isolated environment. So, atleast for now, Cloak is available purely on the web
+
+</details>
+
+<details>
+<summary> My browser is not supported. What do I do? </summary>
+
+Cloak makes extensive use of the WebCrypto API, which is available only on major browsers post 2017. Older browsers simply **cannot be supported** by Cloak, as it would mean using a non-standard polyfill for WebCrypto, which would be a security risk, or would mean adding an external dependency, which would open Cloak to supply chain attacks. Cloak would also be slower on older browsers, as it would have to run the full encryption algorithm in the browser, instead of using the native WebCrypto API.
 
 </details>
 

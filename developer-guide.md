@@ -2,15 +2,16 @@
 
 This guide is intended for developers who want to contribute to the project. It is not intended for users who want to use the project.
 
-
 ## Getting Started
 
 Clone the cloak repository:
+
 ```bash
 git clone https://github.com/cloak-dev/cloak
 ```
 
 Clone the docs repository:
+
 ```bash
 git clone https://github.com/cloak-dev/docs
 ```
@@ -20,11 +21,12 @@ git clone https://github.com/cloak-dev/docs
 Any modern browser should work. In particular, the WebCrypto API must be available.
 
 ## How end-to-end encryption works
+
 Read our blog post on [how end-to-end encryption works](https://cloak-dev.github.io/blog/eli5-how-e2ee-works/).
 
 ## How Cloak Works
 
-The core of Cloak is the `E2EE` class, which is responsible for maintaing key-pairs, and provides methods to perform [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman), as well as [AES-CTR](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR)) encryption and decryption.
+The core of Cloak is the `E2EE` class, which is responsible for maintaing key-pairs, and provides methods to perform [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman), as well as [AES-CTR](<https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR)>) encryption and decryption.
 
 The `Cloak` class is then responsible for hooking into the chat application, and using the `E2EE` class to encrypt and decrypt messages.
 
@@ -41,6 +43,7 @@ No! The key exchange is handled by cloak itself using the message hooking mechan
 ## How to Contribute
 
 If you want to contribute to the project, you can do so by:
+
 1. Opening an issue on the [cloak repository](https://github.com/cloak-dev/cloak).
 2. Adding support for a new chat application. (see below)
 3. Contributing to the [documentation](https://github.com/cloak-dev/docs)
@@ -57,8 +60,6 @@ To add support for a new chat application, you need to do the following:
 5. Test your code, using the test chat server provided.
 6. Open a pull request.
 
-
 ## Note
+
 The core of Cloak is closed to contributions. This is because we want to ensure that the core of Cloak is secure, and we don't want to compromise on that. However, we are open to contributions to the chat application hooks, and the documentation.
-
-
