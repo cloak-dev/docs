@@ -12,7 +12,7 @@ See the [installation instructions](./index.md#install).
 
 ### Starting the application
 
-Once you have loaded a [supported chat application](./index.md#supported-chat-applications), simply click the Cloak 'setup' bookmarklet in your browser's bookmarks bar.
+Once you have loaded a [supported chat application](./index.md#supported-chat-applications), simply click the Cloak extension's button.
 
 < add image here >
 
@@ -22,7 +22,7 @@ Get your friend to perform the same steps you did above. Cloak needs to be set u
 
 < image here >
 
-Once the both of you are done, click the 'run' bookmarklet to start the encryption layer.
+Once the both of you are done, click the 'run' button in the top right of your screen to start the encryption layer.
 
 < image here >
 
@@ -30,12 +30,14 @@ You will see a seemingly garbled message appear in the chat window. This is norm
 
 < image here >
 
-All future messages however, will appear in plain text. However, the server will simply see a bunch of garbled text!
+All future messages however, will appear to you in plain text. However, the server will simply see a bunch of garbled text!
 
 ### Session Management
 
-Everytime you close or reload the tab, the encryption layer will be reset. This is to prevent any potential security issues. Next time you open the app, you will simply have to click the bookmarklets again to start the encryption layer.
+Everytime you close or reload the tab, the encryption layer will be reset. This is to prevent any potential security issues. Next time you open the app, you will have to repeat the process to enable the encryption layer.
 
 ### Uninstall
 
-To uninstall Cloak, simply remove the bookmarklets from your browser's bookmarks bar.
+To uninstall Cloak, simply remove the extension.
+
+< image here >

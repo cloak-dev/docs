@@ -25,27 +25,11 @@ Want to add support for another chat application? [Read the developer guide](dev
 
 ## Install
 
-To install Cloak, run the following command in your terminal:
-
-1. Linux and MacOS
-
-```bash
-curl -s "https://tinyurl.com/get-cloak/unix" | bash
-```
-
-2. Windows
-
-```powershell
-iwr -usebp "https://tinyurl.com/get-cloak/win" | iex
-```
-
-It will add bookmarklets to your supported<sup>1</sup> browsers that will allow you to encrypt your messages on the supported chat applications.
-
-<sup>1</sup> Browsers utilising the latest Chromium engine, as well as Firefox are supported.
+You can install Cloak from the Chrome Web Store as a Chrome Extension as well as a Firefox addon.
 
 ## Getting Started
 
-First, you and your friend need to [install Cloak](#install). Once you both have installed Cloak, you can open a [supported chat application](#supported-chat-applications), and simply click on the "setup cloak" bookmarklet. Once the both of you have done this, simply click the "run" bookmarklet.
+First, you and your friend need to [install Cloak](#install). Once you both have installed Cloak, you can open a [supported chat application](#supported-chat-applications), and simply click on the extension. Once the both of you have done this, simply click the "run" button that appears on the top right of your screen.
 
 And that's it! All future messages between the both of you in that chat application will be encrypted for the current session. If you reload the tab, you will have to run the script again.
 
@@ -67,7 +51,7 @@ Most chat applications have end-to-end encryption, but are closed source. This m
 <details>
 <summary>How does Cloak work?</summary>
 
-A shared key is arrived at using the ECDH key exchange, and is used to encrypt and decrypt messages. The shared key is never sent over the network, and is only stored in the browser's memory. The shared key is destroyed when the tab is closed, or when the "run" bookmarklet is clicked again.
+A shared key is arrived at using the ECDH key exchange, and is used to encrypt and decrypt messages. The shared key is never sent over the network, and is only stored in the browser's memory. The shared key is destroyed when the tab is closed.
 
 All messages are sent by hooking into the "send" button of your chat app, and all messages are received by hooking into the websocket connection of your chat app.
 
@@ -92,7 +76,7 @@ As far as we are aware, there is no product that matches up to Cloak in terms of
 <details>
 <summary> Why isn't cloak available on the mobile platform? </summary>
 
-Cloak requires hooking into various functionalities of the chat application, which is not possible on mobile where each application runs in it's own isolated environment. So, atleast for now, Cloak is available purely on the web
+Cloak requires hooking into various functionalities of the chat application, which is not possible on mobile where each application runs in it's own isolated environment. So, atleast for now, Cloak is available purely on the web.
 
 </details>
 
