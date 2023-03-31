@@ -26,15 +26,15 @@ Once the both of you are done, click the 'Start Encrypting' button in the top ri
 
 <img src="https://i.imgur.com/gTET5ks.png" height=300>
 
-You will also see a seemingly garbled message appear in the chat window. This is normal. It is the setup message that your friend's instance of Cloak sent to your's. Your friend will see a similar message in their chat window.
+You will also see a seemingly garbled message appear in the chat window. This is normal. It is the setup message that your friend's instance of Cloak sent to yours. Your friend will see a similar message in their chat window.
 
 <img src="https://i.imgur.com/DgQGnQB.png" height=300>
 
-All future messages however, will appear to you in plain text. However, the server will simply see a bunch of garbled text!
+All future messages will appear to you in plain text. However, the server will simply see a bunch of garbled text!
 
 ### Session Management
 
-Everytime you close or reload the tab, the encryption layer will be reset. This is to prevent any potential security issues. Next time you open the app, you will have to repeat the process to enable the encryption layer.
+Everytime you close or reload the tab, the encryption layer will be reset. This is to prevent any potential security issues. Next time you open the app, you will have to repeat the aforementioned process to re-enable the encryption layer.
 
 ### Uninstall
 

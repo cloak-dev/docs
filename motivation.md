@@ -14,7 +14,7 @@ The problem isn't exactly the state reading your messages. The fact that there i
 
 ## What is the solution?
 
-The solution is simply to use your _own_ layer of end-to-end encryption. Essentially, you don't trust that the messaging app actually encrypts your message, and you encrypt it first _before_ even giving the message to the app. This means that the app can't read your messages, and so if it is ever passing the un-encrypted message to the server, it will remain encrypted due to the first process.
+The solution is simply to use your _own_ layer of end-to-end encryption. Essentially, you don't trust that the messaging app actually encrypts your message, so you encrypt it first _before_ even giving the message to the app. This means that the app can't read your messages, and if it is ever passing the un-encrypted message to the server, it will remain encrypted due to the first process.
 
 ## Encryption and decryption is way too complicated, how does this scale to a solution that the average person can use?
 

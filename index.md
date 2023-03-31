@@ -25,11 +25,11 @@ Want to add support for another chat application? [Read the developer guide](dev
 
 ## Install
 
-You can install Cloak from the Chrome Web Store as a Chrome Extension as well as a Firefox addon.
+You can install Cloak on Google Chrome as a Chrome Extension as well as on Firefox as a Firefox addon.
 
 ## Getting Started
 
-First, you and your friend need to [install Cloak](#install). Once you both have installed Cloak, you can open a [supported chat application](#supported-chat-applications), and simply click on the extension. Once the both of you have done this, simply click the "run" button that appears on the top right of your screen.
+First, you and your friend need to [install Cloak](#install). Once you both have installed Cloak, you can open a [supported chat application](#supported-chat-applications), and simply click on the extension, and then click on the 'Start encrypting' button that appears. Once the both of you have done this, simply click the Cloak logo that appears on the top right of your screen.
 
 And that's it! All future messages between the both of you in that chat application will be encrypted for the current session. If you reload the tab, you will have to run the script again.
 
@@ -44,7 +44,7 @@ If you want to learn more about how cloak is built, contribute to it by e.g addi
 <details>
 <summary>My chat application already has end-to-end encryption. Why do I need Cloak?</summary>
 
-Most chat applications have end-to-end encryption, but are closed source. This means that you cannot verify that the encryption is actually being used. Cloak is open source, so you can verify that the encryption is actually being used. Countless times, closed-source chat applications have been caught using insecure encryption, or not using encryption at all. See [motivation](motivation.md) for more information.
+Most chat applications have end-to-end encryption, but are closed source. This means that you cannot verify that the encryption is actually being used. Cloak is open source, so you can verify that your messages are actually being encrypted. [Countless times](https://cloak-dev.github.io/blog/e2ee-backdoors), closed-source chat applications have been caught using insecure encryption, or not using encryption at all. See [motivation](motivation.md) for more information.
 
 </details>
 
@@ -69,14 +69,14 @@ Cloak uses the battle-tested WebCrypto API, which is used by many other secure a
 <details>
 <summary> How does Cloak compare to other end-to-end encryption solutions? </summary>
 
-As far as we are aware, there is no product that matches up to Cloak in terms of ease of use, feature-set, security, and openness.
+As far as we are aware, there is no product that matches up to Cloak in terms of ease of use, feature-set, security, and openness. However, there are many products adjacent to this space that Cloak draws inspiration from, such as Cryptomator, a ZK encryption product. We have a [blog post](https://cloak-dev.github.io/blog/cryptomator-zk-encryption) about the same as well.
 
 </details>
 
 <details>
 <summary> Why isn't cloak available on the mobile platform? </summary>
 
-Cloak requires hooking into various functionalities of the chat application, which is not possible on mobile where each application runs in it's own isolated environment. So, atleast for now, Cloak is available purely on the web.
+Cloak requires hooking into various functionalities of the chat application, which is not possible on mobile where each application runs in it's own isolated environment. So, atleast for now, Cloak is available only on the web.
 
 </details>
 
@@ -90,6 +90,6 @@ Cloak makes extensive use of the WebCrypto API, which is available only on major
 <details>
 <summary> This all seems very interesting. Where can I delve into the details? </summary>
 
-If you are a developer, you can read the [developer guide](developer-guide.md). If you are a user, you can read the [manual](manual.md).
+If you are a developer, you can read the [developer guide](./developer-guide.md). If you are a user, you can read the [manual](./manual.md).
 
 For general reading about end-to-end encryption and security, check out our [blog](https://cloak-dev.github.io/blog/)!.
