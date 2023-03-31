@@ -51,11 +51,13 @@ Most chat applications have end-to-end encryption, but are closed source. This m
 <details>
 <summary>How does Cloak work?</summary>
 
+<p>
 A shared key is arrived at using the ECDH key exchange, and is used to encrypt and decrypt messages. The shared key is never sent over the network, and is only stored in the browser's memory. The shared key is destroyed when the tab is closed.
 
 All messages are sent by hooking into the "send" button of your chat app, and all messages are received by hooking into the websocket connection of your chat app.
 
 There is no Cloak server involved; everything happens entirely in the browser.
+</p>
 
 </details>
 
@@ -69,27 +71,36 @@ Cloak uses the battle-tested WebCrypto API, which is used by many other secure a
 <details>
 <summary> How does Cloak compare to other end-to-end encryption solutions? </summary>
 
+<p>
 As far as we are aware, there is no product that matches up to Cloak in terms of ease of use, feature-set, security, and openness. However, there are many products adjacent to this space that Cloak draws inspiration from, such as Cryptomator, a ZK encryption product. We have a [blog post](https://cloak-dev.github.io/blog/cryptomator-zk-encryption) about the same as well.
+</p>
 
 </details>
 
 <details>
 <summary> Why isn't cloak available on the mobile platform? </summary>
 
+<p>
 Cloak requires hooking into various functionalities of the chat application, which is not possible on mobile where each application runs in it's own isolated environment. So, atleast for now, Cloak is available only on the web.
+</p>
 
 </details>
 
 <details>
 <summary> My browser is not supported. What do I do? </summary>
 
+<p>
 Cloak makes extensive use of the WebCrypto API, which is available only on major browsers post 2017. Older browsers simply **cannot be supported** by Cloak, as it would mean using a non-standard polyfill for WebCrypto, which would be a security risk, or would mean adding an external dependency, which would open Cloak to supply chain attacks. Cloak would also be slower on older browsers, as it would have to run the full encryption algorithm in the browser, instead of using the native WebCrypto API.
+</p>
 
 </details>
 
 <details>
 <summary> This all seems very interesting. Where can I delve into the details? </summary>
 
-If you are a developer, you can read the [developer guide](./developer-guide.md). If you are a user, you can read the [manual](./manual.md).
+<p>
+If you are a developer, you can read the [developer guide](developer-guide.md). If you are a user, you can read the [manual](manual.md).
 
 For general reading about end-to-end encryption and security, check out our [blog](https://cloak-dev.github.io/blog/)!.
+</p>
+</details>

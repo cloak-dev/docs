@@ -2,17 +2,17 @@
 
 ## Introduction
 
-This is the user manual for the [Cloak](./index.md) application, an end-to-end encryption layer on top of any web-based chat application.
+This is the user manual for the [Cloak](index.md) application, an end-to-end encryption layer on top of any web-based chat application.
 
 ## Installation
 
-See the [installation instructions](./index.md#install).
+See the [installation instructions](index.md#install).
 
 ## Usage
 
 ### Starting the application
 
-Once you have loaded a [supported chat application](./index.md#supported-chat-applications), simply click the Cloak extension's button.
+Once you have loaded a [supported chat application](index.md#supported-chat-applications), simply click the Cloak extension's button.
 
 <img src="https://i.imgur.com/gNJn1mY.png" height=300>
 
