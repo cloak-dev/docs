@@ -26,6 +26,8 @@ Read our blog post on [how end-to-end encryption works](https://cloak-dev.github
 
 ## How Cloak Works
 
+<img src="cloak-dev.png" style="filter: invert(1)">
+
 The core of Cloak is the `E2EE` class, which is responsible for maintaing key-pairs, and provides methods to perform [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman), as well as [AES-CTR](<https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR)>) encryption and decryption.
 
 The `Cloak` class is then responsible for hooking into the chat application, and using the `E2EE` class to encrypt and decrypt messages.

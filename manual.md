@@ -10,6 +10,8 @@ See the [installation instructions](index.md#install).
 
 ## Usage
 
+<img src="cloak-man.png" style="filter: invert(1)">
+
 ### Starting the application
 
 Once you have loaded a [supported chat application](index.md#supported-chat-applications), simply click the Cloak extension's button.
