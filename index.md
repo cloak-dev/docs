@@ -6,6 +6,7 @@ Cloak is a simple, lightweight, **purely client-side**, browser script that allo
 
 ## Why do I need Cloak?
 
+As an avid internet user, you are sure to be using a variety of web-based messaging apps. Some, like WhatsApp, are so ubiquitous in our daily lives. In all the furore, what is sometimes lost is that the corporations running those apps may not always have your best interests in mind. One of the major ways they can exploit your activities is by collecting and analyzing your messages. Although they claim to encrypt your message, no one can verify that and messaging apps like Skype have been previously caught reading your messages behind your back. Cloak, let's you _guarantee_ encryption, while letting you continue using whatever messaging app you already use!
 Read the [motivation](motivation.md) for more information.
 
 ## Features
